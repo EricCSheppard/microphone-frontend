@@ -5,3 +5,8 @@ import axios from 'axios'
 export const getAllMics = () => {
     return axios(`${apiUrl}/mics`)
 }
+
+// READ -> Show
+export const getOneMic = (id) => {
+    return axios(`${apiUrl}/mics/${id}`)
+}
