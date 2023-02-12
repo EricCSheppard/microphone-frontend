@@ -32,14 +32,17 @@ const MicForm = (props) => {
                     />
                 </Form.Group>
                 <Form.Group className='m-2'>
-                    <Form.Label>Type:</Form.Label>
-                    <Form.Control
-                        placeholder="What type of Mic is it?"
+                    <Form.Label>Mic type:</Form.Label>
+                    <Form.Select
+                        aria-label='mic type'
                         name='type'
-                        id='type'
-                        value={ mic.type }
+                        defaultValue='Dynamic'
                         onChange={handleChange}
-                    />
+                    >
+                    <option value='Dynamic'>Dynamic</option>
+                    <option value='Condenser'>Condenser</option>
+                    <option value='Ribbon'>Ribbon</option>
+                    </Form.Select>
                 </Form.Group>
                 <Form.Group className='m-2'>
                     <Form.Check 
