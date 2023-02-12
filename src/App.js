@@ -13,6 +13,7 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import ShowMic from './components/mics/ShowMic'
+import CreateMic from './components/mics/CreateMic'
 
 const App = () => {
 
@@ -67,6 +68,13 @@ const App = () => {
             element={
               <RequireAuth user={user}>
                 <ChangePassword msgAlert={msgAlert} user={user} />
+              </RequireAuth>}
+          />
+          <Route
+            path='/create-mic'
+            element={
+              <RequireAuth user={user}>
+                <CreateMic msgAlert={msgAlert} user={user} />
               </RequireAuth>}
           />
           <Route 
