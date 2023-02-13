@@ -34,7 +34,7 @@ const EditBoxModal = (props) => {
             // we'll also send a success message
             .then(() => {
                 msgAlert({
-                    heading: 'Oh Yeah!',
+                    heading: 'Success!',
                     message: 'Box updated',
                     variant: 'success'
                 })
@@ -43,7 +43,7 @@ const EditBoxModal = (props) => {
             // if there is an error, tell the user
             .catch(() => {
                 msgAlert({
-                    heading: 'Oh No!',
+                    heading: 'Failure:',
                     message: 'Something went wrong!',
                     variant: 'danger'
                 })

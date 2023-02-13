@@ -58,7 +58,7 @@ const CreateMic = (props) => {
             // we'll also send a success message
             .then(() => {
                 msgAlert({
-                    heading: 'Oh Yeah!',
+                    heading: 'Success!',
                     message: createMicSuccess,
                     variant: 'success'
                 })
@@ -66,7 +66,7 @@ const CreateMic = (props) => {
             // if there is an error, tell the user
             .catch(() => {
                 msgAlert({
-                    heading: 'Oh No!',
+                    heading: 'Failure:',
                     message: createMicFailure,
                     variant: 'danger'
                 })

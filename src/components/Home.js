@@ -7,7 +7,7 @@ const Home = (props) => {
 
 	return (
 		<Container className='m-2' style={{textAlign: 'center'}}>
-			<h2>See All The Mics</h2>
+			<h2>Mics in the Lockr:</h2>
             <MicsIndex msgAlert={ props.msgAlert }/>
 		</Container>
 	)

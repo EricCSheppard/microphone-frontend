@@ -10,6 +10,12 @@ import EditMicModal from './EditMicModal'
 import ShowBox from '../Box/ShowBox'
 import NewBoxModal from '../Box/NewBoxModal'
 
+const cardContainerStyle = {
+    display: 'flex',
+    flexFlow: 'row wrap',
+    justifyContent: 'center'
+}
+
 const boxCardContainerLayout = {
     display: 'flex',
     justifyContent: 'center',
@@ -80,7 +86,7 @@ const ShowMic = (props) => {
     }
     return (
         <>
-            <Container>
+            <Container style={cardContainerStyle} className='mt-3'>
                 <Card>
                     <Card.Header>{ mic.make } { mic.model }</Card.Header>
                     <Card.Body>
@@ -100,7 +106,6 @@ const ShowMic = (props) => {
                                 className='m-2'
                                 variant='warning'
                                 onClick={() => setEditModalShow(true)}
-
                                 >
                                     Edit Mic
                                 </Button>
@@ -115,7 +120,7 @@ const ShowMic = (props) => {
                     </Card.Footer>  
                 </Card>
             </Container>
-            <Container className='m-2' style={boxCardContainerLayout}>
+            <Container className='mt-2' style={boxCardContainerLayout}>
                 {boxCards}
             </Container>
             <EditMicModal

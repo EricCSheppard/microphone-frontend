@@ -32,7 +32,7 @@ const NewBoxModal = (props) => {
             .then(() => handleClose())
             .then(() => {
                 msgAlert({
-                    heading: 'Oh Yeah!',
+                    heading: 'Success!',
                     message: messages.createBoxSuccess,
                     variant: 'success'
                 })
@@ -41,7 +41,7 @@ const NewBoxModal = (props) => {
             // if there is an error, tell the user
             .catch(() => {
                 msgAlert({
-                    heading: 'Oh No!',
+                    heading: 'Failure:',
                     message: messages.createBoxFailure,
                     variant: 'danger'
                 })

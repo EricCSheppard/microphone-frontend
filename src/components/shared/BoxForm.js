@@ -16,7 +16,7 @@ const BoxForm = (props) => {
                         defaultValue={box.style}
                         onChange={handleChange}
                     >
-                    <option>Please Select a Style:</option>
+                    <option>Please Select a style:</option>
                     <option value='wood'>Wood</option>
                     <option value='plastic'>Plastic</option>
                     <option value='bag'>Bag</option>
@@ -30,7 +30,7 @@ const BoxForm = (props) => {
                         defaultValue={box.condition}
                         onChange={handleChange}
                     >
-                    <option>Please Select a Style:</option>
+                    <option>Please Select a condition:</option>
                     <option value='new'>new</option>
                     <option value='used'>used</option>
                     </Form.Select>

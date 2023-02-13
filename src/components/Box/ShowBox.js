@@ -10,8 +10,6 @@ const ShowBox = (props) => {
     const setBgStyle = (sty) => {
         if (sty === 'wood') {
             return({width: '18rem', backgroundColor: '#d1b073'})
-        } else if (sty === 'plastic') {
-            return({width: '18rem', backgroundColor: '#969493'})
         } else {
             return({width: '18rem', backgroundColor: '#969493'})
         }
@@ -43,13 +41,13 @@ const ShowBox = (props) => {
                     <small>it keeps the mic safe!</small>
                 </Card.Body>
                 <Card.Footer>
-                    <small>Condition: {box.condition} </small>
+                    <small>Condition: {box.condition} </small><br/>
                     {
                         user && mic.owner && user._id === mic.owner._id 
                         ?
                         <>
                             <Button onClick={() => setEditModalShow(true)
-                            } variant='warning'>Edit Box</Button>
+                            } variant='warning' className='me-2'>Edit Box</Button>
                             <Button 
                                 variant='danger' 
                                 onClick={() => destroyBox()}

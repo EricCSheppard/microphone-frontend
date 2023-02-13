@@ -37,7 +37,7 @@ const EditMicModal = (props) => {
             .then(() => handleClose())
             .then(() => {
                 msgAlert({
-                    heading: 'Oh Yeah!',
+                    heading: 'Success!',
                     message: messages.updateMicSuccess,
                     variant: 'success'
                 })
@@ -45,7 +45,7 @@ const EditMicModal = (props) => {
             .then(() => triggerRefresh())
             .catch(() => {
                 msgAlert({
-                    heading: 'Oh No!',
+                    heading: 'Failure',
                     message: messages.updateMicFailure,
                     variant: 'danger'
                 })
