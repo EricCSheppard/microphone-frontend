@@ -13,7 +13,9 @@ const messages = {
     updateMicSuccess: 'Microphone updated!',
     updateMicFailure: 'Something went wrong, please try again!',
     deleteMicSuccess: 'Mic deleted',
-    deleteMicFailure: 'Something went wrong, please try again!'
+    deleteMicFailure: 'Something went wrong, please try again!',
+    createBoxSuccess: 'Box added!',
+    createBoxFailure: 'Something went wrong, please try again!'
 }
 
 module.exports = messages

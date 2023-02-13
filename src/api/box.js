@@ -33,7 +33,7 @@ export const updateBox = (user, micId, updatedBox) => {
 // DELETE
 // /box/:micId/:boxId
 
-export const deleteBox = (user, micId, BoxId) => {
+export const deleteBox = (user, micId, boxId) => {
     return axios({    
         url: `${apiUrl}/box/${micId}/${boxId}`,
         method: 'DELETE',

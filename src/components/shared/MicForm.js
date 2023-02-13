@@ -39,6 +39,7 @@ const MicForm = (props) => {
                         defaultValue='Dynamic'
                         onChange={handleChange}
                     >
+                    <option>Please Select a Style</option>
                     <option value='Dynamic'>Dynamic</option>
                     <option value='Condenser'>Condenser</option>
                     <option value='Ribbon'>Ribbon</option>
