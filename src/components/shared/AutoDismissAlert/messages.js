@@ -9,7 +9,11 @@ const messages = {
     getMicsFailure: 'Failed to find mics, please try again',
     getMicsSuccess: 'Here are some mics!',
     createMicSuccess: 'New Microphone added!',
-    createMicFailure: 'Something went wrong, please try again!'
+    createMicFailure: 'Something went wrong, please try again!',
+    updateMicSuccess: 'Microphone updated!',
+    updateMicFailure: 'Something went wrong, please try again!',
+    deleteMicSuccess: 'Mic deleted',
+    deleteMicFailure: 'Something went wrong, please try again!'
 }
 
 module.exports = messages
