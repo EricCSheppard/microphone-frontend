@@ -41,19 +41,22 @@ const MicsIndex = (props) => {
     }
 
     const micCards = mics.map(mic => (
-        <Card key={ mic.id } style={{ width: '30%', margin: 5 }}>
-            <Card.Header>{ mic.make} { mic.model }</Card.Header>
-            <Card.Body>
-                <Card.Text>
-                    <Link to={`/mics/${mic.id}`} className='btn btn-info'>View { mic.make} { mic.model }</Link>
-                </Card.Text>
-                { mic.owner ?
-                <Card.Footer>
-                    owner: {mic.owner.email}     
-                </Card.Footer>
-                : null }
-            </Card.Body>
-        </Card>
+        // <Card key={ mic.id } style={{ width: '30%', margin: 5 }}>
+        //     <Card.Header>{ mic.make} { mic.model }</Card.Header>
+        //     <Card.Body>
+        //         <Card.Text>
+        //             <Link to={`/mics/${mic.id}`} className='btn btn-info'>View { mic.make} { mic.model }</Link>
+        //         </Card.Text>
+        //         { mic.owner ?
+        //         <Card.Footer>
+        //             owner: {mic.owner.email}     
+        //         </Card.Footer>
+        //         : null }
+        //     </Card.Body>
+        // </Card>
+        <div class='post-it'>
+            <p>{ mic.model } </p>
+        </div>
     ))
     return (
         <div className="container-md" style= { cardContainerStyle }>

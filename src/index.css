@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.post-it {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: #ffd57e;
+    border: 2px solid #ffab44;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .post-it:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffab44;
+    transform-origin: left top;
+    transform: skew(-20deg);
+  }
+
+  .post-it p {
+    margin: 0;
+  }
