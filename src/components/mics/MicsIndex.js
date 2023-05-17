@@ -55,7 +55,8 @@ const MicsIndex = (props) => {
         //     </Card.Body>
         // </Card>
         <div class='post-it'>
-            <p>{ mic.model } </p>
+            <p>{ mic.model } </p><br/>
+            <p> { mic.make } </p>
         </div>
     ))
     return (
